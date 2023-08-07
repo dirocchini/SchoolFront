@@ -1,27 +1,21 @@
-# SchoolRecordsFront
+# SchoolFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+Considerações
 
-## Development server
+Pessoal, fiquei enrolado com o trabalho que estou finalizando mas fiz o teste. acredito que com ele, mesmo incompleto, consigam ter uma ideia das minhas capacidades e conhecimento. Vou enumerar algumas melhorias que poderia ter colocado
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Não consegui colocar algumas coisas que gostaria, mas vou enumerá-las para que possam ter ciência: 
+1. queria ter colocado um JWT Auth no backend
+2. na interface:
+3.   ficaria bem melhor para o usuário se colocasse um datepicker para selecionar a data de nascimento
+4.   o select de curso não está selecionando o curso ativo do usuário, quando ele entra no componente
+5.   ficaram faltando validações dos dados inputados no front, sempre valido tanto no front quanto no back
+6.   se clicar fora da modal, no momento de escolher o usuario, ele mantem o estado e nao reconhece se clicar em outro usuario para editar
+7.   gostaria de ter colocado alguns indicativos visuais para indicar a operação realizada, bem como indicar se houve alguma falha
+8. a parte de historico, gostaria de ter colocado um cadastro de disciplinas, cadastro de historico com notas, isso tudo armazenado em banco e, na hora de baixar o historico, todas essas infomações seriam obtidas e montadas, ou em um doc ou em um pdf.
 
-## Code scaffolding
+Acredito que seja isso,
+Espero que considerem, mesmo estando incompleto.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Abcs! 
+   
