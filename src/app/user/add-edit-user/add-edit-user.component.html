@@ -1,0 +1,37 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+    <div class="p-2 w-50 bd-highlight">
+        <div class="input-group mb-3">
+            <span class="input-group-text">name</span>
+            <input type="text" class="form-control" [(ngModel)]="Name">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Surname</span>
+            <input type="text" class="form-control" [(ngModel)]="SurName">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Email</span>
+            <input type="text" class="form-control" [(ngModel)]="Email" [disabled]="user.id!='0' ? true : false">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Birthdate</span>
+            <input type="text" class="form-control" [(ngModel)]="BirthDate">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Department</span>
+            <select class="form-select"  [(ngModel)]="Schooling">
+                <option>--Select--</option>
+                <option *ngFor="let sch of SchoolingList.data" [ngValue]="sch">
+                    {{sch.description}}
+                </option>
+            </select>
+        </div>
+    </div>
+
+</div>
+<button type="button" (click)="addEmployee()" *ngIf="user.id=='0'" class="btn btn-primary">
+    Create
+</button>
+
+<button type="button" (click)="updateEmployee()" *ngIf="user.id!='0'" class="btn btn-primary">
+    Update
+</button>
